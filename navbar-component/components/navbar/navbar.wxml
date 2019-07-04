@@ -1,0 +1,27 @@
+<!--components/navbar/navbar.wxml-->
+<view class='nav-wrap' style='height: {{navbarHeight}}px;'>
+  <!-- 头部状态栏占位 -->
+  <view class="statusBar" style="height:{{statusBarHeight}}px"></view>
+   
+  <view class="nav-box" style="height:{{navbarHeight - statusBarHeight}}px">
+   
+    <view class="nav-left">
+      <view class='nav-capsule' wx:if='{{showCapsule}}'>
+        <view bindtap='_navback' wx:if='{{!share}}' class="nav-capsule-icon">
+          <image src='/images/back.png' class='icon'></image>
+        </view>
+        <view class='navbar-v-line' wx:if='{{!share}}'></view>
+        <view bindtap='_backhome' class="nav-capsule-icon back-home">
+          <image src='/images/home.png' class='icon'></image>
+        </view>
+      </view>
+    </view>
+
+    <view class='nav-title'>{{title}}</view>
+
+    <!-- 胶囊占位 -->
+    <view class="nav-right"></view>
+  </view> 
+</view>
+<!--nav占位-->
+<view class="nav-placeholder" style="height: {{navbarHeight}}px;"></view>

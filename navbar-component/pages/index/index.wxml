@@ -1,0 +1,5 @@
+
+<nav-bar showCapsule="0" title="小程序navbar组件"></nav-bar>
+<view class="container">
+<navigator url="/pages/article/article"> <button>页面跳转</button></navigator>
+</view>

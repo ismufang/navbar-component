@@ -1,0 +1,3 @@
+<!--pages/article/article.wxml-->
+<nav-bar title="article"></nav-bar>
+<text>pages/article/article.wxml</text>
